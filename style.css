@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&family=Work+Sans:wght@200;300;400;500;700&display=swap');
+/* General Rules */
+:root { 
+    --main-color : #50e2e3 ;
+}
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background:linear-gradient(#c0392b, #008080 );
+height :100vh;
+overflow:hidden; 
+display: flex;
+justify-content: center;
+align-items: center;
+font-weight: 500;
+}
+i{ 
+    margin-right: 0.5em ;
+    font-size: 2em;
+    color: var(--main-color);
+}
+a{
+    text-decoration: none;
+}
+.main-container { 
+    margin: 2em auto ;
+}
+section { 
+width: 50em;
+height: 50em;
+background-color: transparent ;
+padding: 5em;
+border-radius: 3em;
+border: 1px solid white;
+backdrop-filter: blur(28px);
+}
+h1 {
+    color: var(--main-color);
+display: flex ;
+justify-content: center;
+padding-bottom: 1em;
+}
+input[type = "text"], 
+input[type = "password"]{
+    caret-color: var(--main-color);
+    width: 100%;
+    padding: 1em;
+    outline: none;
+    border-radius:2em ;
+    font-size: 1.4em;
+}
+.checkbox { 
+    margin: 1.5em 0;
+ 
+}
+input { 
+    background-color: transparent;
+    outline: none;
+    border: 1px solid white;
+}
+.label-row {
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+}
+.label-row label { 
+    display: block;
+    margin: 0.9em 0;
+    font-size: 1.8em;
+    text-align: center;
+    color:var(--main-color);
+}
+.links { 
+    display: flex;
+    justify-content: space-between;
+    align-content: center ;
+    margin-top: 3em;
+}
+.links a { 
+    font-size: 1.5em;
+    
+    color: var(--main-color);
+}
+.checkbox { 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+input[type="checkbox"]
+{
+    margin-right: 0.5em;
+    margin-top: 0.4em;
+    width: 1.5em;
+    height: 1.5em;
+    justify-content: center;
+}
+.checkbox label { 
+    color: var(--main-color);
+    font-size: 1.5em;
+}
+.submit-btn{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input[type="submit"]{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 3em;
+    padding: 1em;
+    border-radius: 2.5em;
+    cursor: pointer;
+}
+input[type="submit" ]:hover { 
+    opacity: 0.7;
+}
+input[value="Login"]
+{
+    /* padding-top: 3em !important; */
+font-weight: bold;
+color: var(--main-color);
+    font-size: 1.4em;
+    text-align: center;
+}
+@media (max-width: 767px) {
+    .main-container { 
+      width: 750px;
+      overflow: hidden;
+    }
+*{
+    overflow: hidden;
+    font-size:8px; 
+}
+body{
+overflow:hidden ; 
+height: 100vh;
+width: 100%;
+
+}
+section { 
+    overflow: hidden ;
+    position:absolute ;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+width :50em;
+height :50em;
+    border: none;
+}
+ }
+
+
